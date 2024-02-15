@@ -1,0 +1,23 @@
+body {
+    background-color: #ffffff;
+    margin: 1rem;
+}
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+/* Style the internals of the web component */
+
+my-flipping-tile.backside-magenta::part(tile-back) {
+    background-color: #ff00ff;
+}
+
+my-flipping-tile.backside-green-with-image::part(tile-back) {
+    background: #00ff00 url("../images/0.png") no-repeat center/100%;
+}
+
